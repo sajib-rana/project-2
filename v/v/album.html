@@ -13,6 +13,7 @@
             border-radius: 5px;
             position: relative;
             margin: 10px;
+            overflow: hidden;
         }
         .photo img{
             width: 100%;
@@ -39,6 +40,10 @@
         .photo-album{
             display: flex;
             flex-wrap: wrap;
+        }
+        .photo-frame:hover .photo{
+            transform: scale(1.5) rotate(60deg);
+            transition: transform 2s ease-in;
         }
     </style>
 </head>
